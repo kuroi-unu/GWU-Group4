@@ -1,0 +1,49 @@
+import turtle
+wn = turtle.Screen()
+hangman = turtle.Turtle()
+
+#hangman platform
+hangman.right(90)   
+hangman.forward(200)
+hangman.left(90)
+hangman.forward(50)
+hangman.forward(-100)
+hangman.forward(50)
+hangman.left(90)
+hangman.forward(200)
+hangman.right(90)
+hangman.forward(60)
+hangman.right(90)
+hangman.forward(30)
+
+#hangman 
+def head():
+    hangman.right(90)   #head
+    hangman.circle(10)
+def body():
+    hangman.penup() #body
+    hangman.left(90)    
+    hangman.forward(20)
+    hangman.pendown()
+    hangman.forward(50)
+    hangman.forward(-40)
+def r_arm():
+    hangman.right(45)   #right arm
+    hangman.forward(20)
+    hangman.forward(-20)
+def l_arm():
+    hangman.left(90)    #left arm
+    hangman.forward(20)
+    hangman.forward(-20)
+    hangman.right(45)
+def r_leg():
+    hangman.forward(37) #right leg
+    hangman.right(45)
+    hangman.forward(20)
+    hangman.forward(-20)
+def l_leg():
+    hangman.left(90)    #left leg
+    hangman.forward(20)
+    hangman.forward(-20)
+
+wn.exitonclick()
